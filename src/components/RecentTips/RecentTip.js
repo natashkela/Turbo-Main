@@ -5,7 +5,7 @@ const RecentTip = ({id, title, date}) => {
     <div className="col-md-4">
       <div className="rq-tips-single wow fadeInLeft" data-wow-duration="500ms">
         <div className="image-container">
-          <img src={require("../img/tips/tips"+id+".jpg")} alt="" />
+          <img src={require("../../img/tips/tips"+id+".jpg")} alt="" />
         </div>
         <div className="tips-content">
           <span className="date">{date}</span>

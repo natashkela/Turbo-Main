@@ -6,7 +6,7 @@ const Testimonial = ({author,stars,comment,userId,isActive}) => {
       <div className="item">
         <p className="testimoinal-text">{comment}</p>
         <span className="author-name-title">
-          <img src={require("../img/testimoianl1.png")} alt="" />
+          <img src={require("../../img/testimoianl1.png")} alt="" />
           <a href={"profile?id="+userId}>{author}<i className="ion-ios-minus-empty"></i>
             <span>
               {Array.apply(null, { length: stars }).map((e, i) =>

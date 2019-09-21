@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutUs from './AboutUs.js';
-import ContactUs from './ContactUs.js';
-import Team from './Team.js';
+import ContactUs from '../ContactUs.js';
+import Team from '../Team.js';
 const AboutUsContentContainer = () => {
   return (
     <div className="rq-content-block">

@@ -5,8 +5,8 @@ import {
 } from 'react-router-dom'
 
 //App Components
-import Home from './Home';
-import About from './About';
+import Home from './Home/Home';
+import About from './About/About';
 import Contact from './Contact';
 import Cars from './Cars';
 import CarDetail from './CarDetail';
