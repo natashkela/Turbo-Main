@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import FilterCarsBy from './FilterCarsBy.js';
 import CarListViewType from './CarListViewType.js';
-import Pagination from './Pagination.js';
+import Pagination from '../../Pagination/Pagination.js';
 class CarListing extends Component{
   state={
     list:[

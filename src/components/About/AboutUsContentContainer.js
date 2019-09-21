@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutUs from './AboutUs.js';
-import ContactUs from '../ContactUs.js';
+import ContactUs from '../Contact/ContactUs.js';
 import Team from '../Team.js';
 const AboutUsContentContainer = () => {
   return (

@@ -7,8 +7,8 @@ import {
 //App Components
 import Home from './Home/Home';
 import About from './About/About';
-import Contact from './Contact';
-import Cars from './Cars';
+import Contact from './Contact/Contact';
+import Cars from './Cars/Cars';
 import CarDetail from './CarDetail';
 import Blog from './Blog';
 import BlogPost from './BlogPost';
