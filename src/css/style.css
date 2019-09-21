@@ -1,0 +1,252 @@
+.dropdown:hover .dropdown-menu{
+  opacity:1;
+  visibility:visible;
+}
+
+.owl-carousel{
+  display:block;
+}
+
+.header-body{
+  background:url('../img/turbo-banner.jpg') top center no-repeat!important;
+  background-size:cover;
+}
+
+.inner-page-banner{
+  background: url('../img/inner-banner/about-us.jpg') top center no-repeat!important;
+  background-size: cover!important;
+}
+
+.member-single:hover{
+  cursor:pointer;
+}
+
+.about-us .navbar,
+.car-detail .navbar,
+.contact-us .navbar,
+.cars .navbar,
+.blog .navbar,
+.blog-post .navbar,
+.checkout .navbar,
+.my-profile .navbar,
+.list-your-car .navbar{
+  position: sticky;
+  top: 0px;
+  z-index: 40;
+}
+
+.rq-contact-us-grid-block{
+  padding: 105px 0 90px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.rc-slider-track{
+  background-color: #efa80f!important;
+}
+.rc-slider-handle,
+.rc-slider-handle:active,
+.rc-slider-handle:hover{
+  border-color:#efa80f;
+}
+.rc-slider-handle:active{
+  box-shadow:0 0 5px #efa80f;
+}
+.rq-pricing-slider{
+  padding:0px;
+}
+.rc-slider-tooltip{
+  z-index:100!important;
+}
+.author-img{
+  background: url('../img/post-single/single-post-author.jpg') top center no-repeat;
+  background-size: cover
+}
+
+.booking-details .total-price{
+  margin-top:100px;
+}
+
+.width-auto{
+  width:auto;
+}
+
+.margin-top-0{
+  margin-top:0;
+}
+
+.margin-top-5{
+  margin-top:5px;
+}
+
+.margin-top-10{
+  margin-top:10px;
+}
+
+.margin-top-15{
+  margin-top:15px;
+}
+
+.margin-top-30{
+  margin-top:30px;
+}
+
+.margin-top-40{
+  margin-top:40px;
+}
+
+.margin-top-60{
+  margin-top:60px;
+}
+
+.margin-right-5{
+  margin-right:5px!important;
+}
+
+.margin-bottom-0{
+  margin-bottom:0;
+}
+
+.margin-bottom-15{
+  margin-bottom:15px;
+}
+
+.margin-bottom-40{
+  margin-bottom:40px;
+}
+
+.margin-left-5{
+  margin-left:5px;
+}
+
+.margin-left-60{
+  margin-left:60px;
+}
+
+.black{
+  color:black;
+}
+
+.no-border{
+  border:none!important;
+}
+
+.checkout .author-img{
+  float:left;
+  margin-top:15px;
+  height:60px;
+  width:60px;
+  border-radius:50%;
+}
+
+.checkout .author-name{
+  padding: 37px;
+  margin-left: 45px;
+}
+
+.select-transparent .rq-form-control{
+  margin-bottom:0px;
+  background-color:white;
+  border-color:#ccc;
+}
+
+.select-transparent .rq-form-control:focus{
+  border-color:#000;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.list-your-car-general-info .col-xs-12{
+  margin-top:40px;
+}
+.list-your-car-general-info .col-xs-12:first-child,
+.list-your-car-general-info .col-xs-12:nth-child(2),
+.list-your-car-details .col-xs-12:first-child,
+.list-your-car-details .col-xs-12:nth-child(2){
+  margin-top:10px;
+}
+
+.list-your-car-general-info .row,
+.list-your-car-details .row{
+  border-bottom:1px solid #ccc;
+}
+
+.list-your-car-details .col-xs-12.feature{
+  margin-top:10px;
+}
+
+.list-your-car-general-info.
+.list-your-car-details{
+  min-height:500px;
+}
+
+.list-your-car-container{
+  min-height:900px;
+}
+
+span.more-info{
+  font-weight: 600;
+  color: black;
+}
+
+.phone-number-input{
+  height:50px!important;
+  width:400px!important;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 10px 40px;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.list-your-car-xs-navigation .active,
+.dropdown-item:hover{
+  color:white;
+  background-color:#efa80f;
+}
+
+@media (max-width:767px){
+  .list-your-car-general-info .col-xs-12{
+    margin-top:10px!important;
+  }
+  .list-your-car-general-info .col-xs-12:first-child,
+  .list-your-car-general-info .col-xs-12:nth-child(2),
+  .list-your-car-details .col-xs-12:first-child,
+  .list-your-car-details .col-xs-12:nth-child(2){
+    margin-top:10px!important;
+  }
+  .list-your-car .rq-form-control{
+    margin-bottom:15px;
+  }
+
+  .list-your-car-general-info .row,
+  .list-your-car-details .row{
+    border:none;
+  }
+
+  .information-box{
+    margin-top:20px;
+  }
+
+}
