@@ -4,7 +4,7 @@ const BlogPostDescription = ({information}) => {
   return (
     <div className="rq-listing-single">
       <div className="rq-listing-standard-image-post">
-        <img src={require("../img/blog-listing/listing-img.png")} alt="" />
+        <img src={require("../../../img/blog-listing/listing-img.png")} alt="" />
         <h3 className="rq-listing-title"><a href={"/blog-post?id="+information.blogId}>{information.title}</a></h3>
         <div className="rq-listing-meta">
           <span className="author-name">{information.author}</span>

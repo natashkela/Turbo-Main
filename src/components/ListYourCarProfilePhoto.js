@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import RegisterCheckout from './RegisterCheckout';
+import RegisterCheckout from './Checkout/RegisterCheckout';
 const ListYourCarProfilePhoto = ({isLoggedIn,customerInformation}) =>{
   return (
     <div className="list-your-mobile-number margin-bottom-40">

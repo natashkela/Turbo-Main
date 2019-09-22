@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BlogPostDescription from './BlogPostDescription.js';
-import Pagination from './Pagination/Pagination';
+import Pagination from '../../Pagination/Pagination';
 const BlogCategoryContent = ({blogPerPage, blogCategories,blogPosts,currentPage,nextPage,previousPage,total}) => {
   let categoryBlogPosts = [];
   let totalPages = 0;

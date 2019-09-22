@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import Navbar from './Navbar.js';
-import BreadcrumbSecondary from './BreadcrumbSecondary.js';
-import BlogCategories from './BlogCategories.js'
-import BlogCategoryContent from './BlogCategoryContent.js';
-import Footer from './Footer.js';
+import Navbar from '../Navbar.js';
+import BreadcrumbSecondary from '../Breadcrumbs/BreadcrumbSecondary.js';
+import BlogCategories from './BlogCategory/BlogCategories.js'
+import BlogCategoryContent from './BlogCategory/BlogCategoryContent.js';
+import Footer from '../Footer.js';
 class Blog extends Component {
   state = {
     blogPerPage:5,

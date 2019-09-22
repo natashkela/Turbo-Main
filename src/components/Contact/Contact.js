@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Navbar from '../Navbar.js';
-import Breadcrumb from '../Breadcrumb.js';
-import ContactUs from '../ContactUsContainer.js';
+import Breadcrumb from '../Breadcrumbs/Breadcrumb.js';
+import ContactUs from './ContactUsContainer.js';
 import Footer from '../Footer.js';
 class Contact extends Component{
   state ={

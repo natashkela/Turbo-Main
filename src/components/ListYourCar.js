@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import Navbar from './Navbar.js';
-import BreadcrumbTernary from './BreadcrumbTernary';
+import BreadcrumbTernary from './Breadcrumbs/BreadcrumbTernary';
 import ListYourCarTabContent from './ListYourCarTabContent';
 import Footer from './Footer.js';
 class ListYourCar extends Component{

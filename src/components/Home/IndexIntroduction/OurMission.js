@@ -1,5 +1,5 @@
 import React from 'react';
-import transparentImg from '../img/block-transparent-img.png';
+import transparentImg from '../../../img/block-transparent-img.png';
 const OurMission = () => {
   return (
     <div className="row">

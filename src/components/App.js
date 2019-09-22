@@ -10,10 +10,10 @@ import About from './About/About';
 import Contact from './Contact/Contact';
 import Cars from './CarComponents/Cars/Cars';
 import CarDetail from './CarComponents/CarDetail/CarDetail';
-import Blog from './Blog';
-import BlogPost from './BlogPost';
-import Checkout from './Checkout';
-import Profile from './Profile';
+import Blog from './Blog/Blog';
+import BlogPost from './Blog/BlogPost/BlogPost';
+import Checkout from './Checkout/Checkout';
+import Profile from './Profile/Profile';
 import ListYourCar from './ListYourCar';
 const App = () => (
   <BrowserRouter>

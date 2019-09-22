@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import IndexHeader from './IndexHeader.js';
-import IndexIntroduction from './IndexIntroduction.js';
+import IndexIntroduction from './IndexIntroduction/IndexIntroduction.js';
 import CarListingTabContainer from '../CarComponents/CarListingInTabs/CarListingTabContainer.js';
 import PartnerImageContainer from './PartnerImageContainer.js';
 import TestimonialsContainer from '../Testimonials/TestimonialsContainer.js';

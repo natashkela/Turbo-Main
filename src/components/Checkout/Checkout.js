@@ -1,11 +1,11 @@
 import React,{Component} from 'react';
-import Navbar from './Navbar';
-import BreadcrumbSecondary from './BreadcrumbSecondary';
+import Navbar from '../Navbar';
+import BreadcrumbSecondary from '../Breadcrumbs/BreadcrumbSecondary';
 import RegisterCheckout from './RegisterCheckout';
 import BillingInformation from './BillingInformation';
 import PaymentInformation from './PaymentInformation';
 import OrderReview from './OrderReview';
-import Footer from './Footer';
+import Footer from '../Footer';
 class Checkout extends Component {
   state = {
     title: "Checkout",

@@ -1,5 +1,5 @@
 import React from 'react';
-import OurMission from '../OurMission.js';
+import OurMission from './OurMission.js';
 const IndexIntroduction = () => {
   return(
     <div className="rq-content-block gray-bg">

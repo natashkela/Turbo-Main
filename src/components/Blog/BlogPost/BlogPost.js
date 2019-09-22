@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import Navbar from './Navbar';
-import BreadcrumbSecondary from './BreadcrumbSecondary';
+import Navbar from '../../Navbar';
+import BreadcrumbSecondary from '../../Breadcrumbs/BreadcrumbSecondary';
 import BlogPostInformation from './BlogPostInformation';
 import BlogPostShare from './BlogPostShare';
 import RelatedPosts from './RelatedPosts';
-import BlogPostComments from './BlogPostComments.js';
-import Footer from './Footer';
+import BlogPostComments from './BlogPostComments/BlogPostComments.js';
+import Footer from '../../Footer';
 class BlogPost extends Component{
   state={
     title: "Blog Post Title",
@@ -96,7 +96,7 @@ class BlogPost extends Component{
         <div className="rq-page-content">
           <div className="blog-post-single-wrapper">
             <div className="signle-post-feature-img">
-              <img src={require("../img/post-single/image-post.jpg")} alt="" />
+              <img src={require("../../../img/post-single/image-post.jpg")} alt="" />
             </div>
             <div className="container">
               <div className="rq-content-block">

@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import Navbar from '../../Navbar.js';
-import Breadcrumb from '../../Breadcrumb.js';
+import Breadcrumb from '../../Breadcrumbs/Breadcrumb.js';
 import Searchbox from '../../Searchbox.js';
 import CarListing from '../CarListing/CarListing.js';
 import Footer from '../../Footer.js';

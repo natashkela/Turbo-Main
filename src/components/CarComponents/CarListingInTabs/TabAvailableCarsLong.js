@@ -8,12 +8,12 @@ const TabAvailableCarsLong = ({list,id}) => {
           <div role="tabpanel" key={index} className={index == 0 ? "tab-pane fade in active" : "tab-pane fade in"} id={id+'-'+(index+1)}>
             <div className="rq-tab-car-details">
               <div className="car-logo">
-                <img src={require("../img/partner-logo/partner"+(index+1)+".png")} alt="" />
+                <img src={require("../../../img/partner-logo/partner"+(index+1)+".png")} alt="" />
               </div>
               <h3>Lamborghini Aventado</h3>
               <div className="large-image-wrapper">
                 <div className="image-bg"></div>
-                <img src={require("../img/tab-image/full-img"+(index+1)+".png")} alt="" />
+                <img src={require("../../../img/tab-image/full-img"+(index+1)+".png")} alt="" />
               </div>
               <div className="car-details-option">
                 <span><i className="ion-briefcase"></i>{tabpanel.luggage_space}</span>

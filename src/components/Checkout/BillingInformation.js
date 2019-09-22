@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
-import CountryListSelect from './CountryListSelect';
-import CityListSelect from './CityListSelect';
+import CountryListSelect from '../CountryListSelect';
+import CityListSelect from '../CityListSelect';
 import PropTypes from 'prop-types';
 class BillingInformation extends Component{
   state = {

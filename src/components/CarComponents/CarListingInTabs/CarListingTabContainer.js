@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import TabCarListNavigation from './TabCarListNavigation.js';
-import TabAvailableCarsBrief from '../../TabAvailableCarsBrief.js';
+import TabAvailableCarsBrief from './TabAvailableCarsBrief.js';
 class CarListingTabContainer extends Component {
   state = {
      list :[
