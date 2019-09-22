@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import companyLogo from '../img/company-logo.png';
+import companyLogo from '../../assets/img/company-logo.png';
 import NavbarItem from './Navbar-Item.js'
 const Navbar = ({isLoggedIn,hasCar}) => {
   let nav ='{"main":[ { "mainMenuItem":{ "name":"Home", "href":"index.html" }, "dropdownMenuItems":{} }, { "mainMenuItem":{ "name":"Listing", "href":"car-listing-grid.html" }, "dropdownMenuItems":[ { "name":"Car listing grid", "href":"car-listing-grid.html" }, { "name":"Car listing list", "href":"car-listing-list.html" }, { "name":"ListingDetails", "href":"listing-detail.html" } ] }, { "mainMenuItem":{ "name":"Blog", "href":"blog-listing.html" }, "dropdownMenuItems":[ { "name":"Blog Listing", "href":"blog-listing.html" }, { "name":"Blog Post", "href":"post-single.html" } ] }, { "mainMenuItem":{ "name":"Page", "href":"#" }, "dropdownMenuItems":[ { "name":"About", "href":"about-us.html" }, { "name":"Contact Us", "href":"contact-us.html" }, { "name":"Checkout", "href":"checkout.html" }, { "name":"Shopping Cart", "href":"shopping-cart.html" }, { "name":"Registration", "href":"registration.html" } ] }]}';

@@ -6,7 +6,7 @@ const PartnerImageContainer = () => {
       <div className="partners-wrapper">
         {
           list.map((partner,index)=>
-            <div key={index} className="partner-single"><a href={"/partner?id="+partner}><img src={require("../../img/partner-logo/partner"+partner+".png")} alt="" /></a></div>
+            <div key={index} className="partner-single"><a href={"/partner?id="+partner}><img src={require("../../assets/img/partner-logo/partner"+partner+".png")} alt="" /></a></div>
           )
         }
       </div>

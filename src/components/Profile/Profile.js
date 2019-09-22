@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
-import Navbar from '../Navbar.js';
+import Navbar from '../Navbar/Navbar.js';
 import Breadcrumb from '../Breadcrumbs/Breadcrumb';
-import CountryListSelect from '../CountryListSelect';
-import CityListSelect from '../CityListSelect';
-import Footer from '../Footer.js';
+import CountryListSelect from '../CountryCitySelectors/CountryListSelect';
+import CityListSelect from '../CountryCitySelectors/CityListSelect';
+import Footer from '../Footer/Footer.js';
 class Profile extends Component{
   state = {
     isLoggedIn:true,
@@ -95,7 +95,7 @@ class Profile extends Component{
                       <form method="POST" encType="multipart/form-data" id="update_profile" >
                         <input type="hidden" name="action" value="profile-update" />
                         <input type="hidden" name="id" value="1" />
-                        <img src={this.state.profile.id && this.state.profile.username ? require("../../img/users/"+this.state.profile.id+"-"+this.state.profile.username+".jpg") : require("../../img/users/avatar.jpg")} style={{width:"200px",height:"200px"}} className="img-responsive" />
+                        <img src={this.state.profile.id && this.state.profile.username ? require("../../assets/img/users/"+this.state.profile.id+"-"+this.state.profile.username+".jpg") : require("../../assets/img/users/avatar.jpg")} style={{width:"200px",height:"200px"}} className="img-responsive" />
                         <br />
                         <input type="file" className="file rq-form-control" name="preview-image" data-filename-placement="inside" />
                         <br />

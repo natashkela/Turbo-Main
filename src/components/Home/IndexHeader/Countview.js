@@ -1,5 +1,5 @@
 import React from 'react';
-import CountUp from 'react-countup';
+import CountUp from 'react-countup/build';
 const Countview = () => {
   const countDuration = 4;
   let list = [

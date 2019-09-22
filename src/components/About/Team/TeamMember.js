@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 const TeamMember = ({member,index})=>{
-  let bgImage = require("../../../img/about-us/about-us-our-team-"+index+".jpg");
+  let bgImage = require("../../../assets/img/about-us/about-us-our-team-"+index+".jpg");
   return (
     <div className="col-md-4 col-sm-6">
       <div className="member-single" style={{backgroundImage:'url("'+bgImage+'")',backgroundSize: 'cover',backgroundPosition: 'top center', backgroundRepeat: 'no-repeat'}}>

@@ -1,7 +1,7 @@
 import React from 'react';
-import Searchbox from '../Searchbox.js';
-import Countview from '../Countview.js';
-import Navbar from '../Navbar.js';
+import Searchbox from '../../Searchbox/Searchbox.js';
+import Countview from './Countview.js';
+import Navbar from '../../Navbar/Navbar.js';
 const IndexHeader = () => {
   return (
     <header className="header">

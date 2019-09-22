@@ -15,7 +15,7 @@ class ListYourCarTabContent extends Component{
         uniqueName:"profile-photo"
       },
       {
-        title:"Mobile Number",
+        title:"Mobile Number", 
         isActive:false,
         uniqueName:"mobile-number"
       },

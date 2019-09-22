@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import RegisterCheckout from './Checkout/RegisterCheckout';
+import RegisterCheckout from '../Checkout/RegisterCheckout';
 const ListYourCarProfilePhoto = ({isLoggedIn,customerInformation}) =>{
   return (
     <div className="list-your-mobile-number margin-bottom-40">
@@ -8,7 +8,7 @@ const ListYourCarProfilePhoto = ({isLoggedIn,customerInformation}) =>{
       <div className="row">
         <div className="col-xs-12 col-sm-12 col-lg-12 col-md-12">
           <div>
-            <img src={customerInformation.id && customerInformation.username ? require("../img/users/"+customerInformation.id+"-"+customerInformation.username+".jpg") : require("../img/users/avatar.jpg")} style={{width:"100px",height:"100px", borderRadius:"50%"}} className=" margin-top-15 img-responsive" />
+            <img src={customerInformation.id && customerInformation.username ? require("../../assets/img/users/"+customerInformation.id+"-"+customerInformation.username+".jpg") : require("../../assets/img/users/avatar.jpg")} style={{width:"100px",height:"100px", borderRadius:"50%"}} className=" margin-top-15 img-responsive" />
             <button className="margin-left-60 rq-btn rq-btn-secondary">Upload Photo </button>
             <p className="margin-top-10">Adding a photo helps hosts recognize each other when picking the car up</p>
           </div>

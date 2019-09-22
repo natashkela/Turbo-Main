@@ -1,6 +1,6 @@
 import React from 'react';
 import FooterNavigationColumns from './FooterNavigationColumns.js';
-import companyLogo from '../img/company-logo.png';
+import companyLogo from '../../assets/img/company-logo.png';
 const Footer = () => {
   let list = [
     [

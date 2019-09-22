@@ -52,7 +52,7 @@ const Team = () =>{
               )}
               <div className="col-md-4 col-sm-6">
                 <div className="member-single">
-                  <img src={require("../../../img/about-us/about-us-join-team.png")} alt="" />
+                  <img src={require("../../../assets/img/about-us/about-us-join-team.png")} alt="" />
                 </div>
               </div>
             </div>

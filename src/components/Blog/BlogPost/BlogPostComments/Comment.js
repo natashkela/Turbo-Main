@@ -6,7 +6,7 @@ const Comment = ({comment}) => {
       <ol className="comment-list">
         <li className="comment">
           <div className="comment-author-img">
-            <img src={require("../../../../img/post-single/comment-img"+comment.userId+".jpg")} alt="" />
+            <img src={require("../../../../assets/img/post-single/comment-img"+comment.userId+".jpg")} alt="" />
           </div>
           <div className="comment-details">
             <span className="author-name"><span className="name">{comment.author}</span></span>

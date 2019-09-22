@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Navbar from '../Navbar.js';
+import Navbar from '../Navbar/Navbar.js';
 import Breadcrumb from '../Breadcrumbs/Breadcrumb.js';
 import AboutUsContentContainer from './AboutUsContentContainer';
-import Footer from '../Footer.js';
+import Footer from '../Footer/Footer.js';
 class About extends Component {
   state={
      title: "About Us",

@@ -5,16 +5,16 @@ import {
 } from 'react-router-dom'
 
 //App Components
-import Home from './Home/Home';
-import About from './About/About';
-import Contact from './Contact/Contact';
-import Cars from './CarComponents/Cars/Cars';
-import CarDetail from './CarComponents/CarDetail/CarDetail';
-import Blog from './Blog/Blog';
-import BlogPost from './Blog/BlogPost/BlogPost';
-import Checkout from './Checkout/Checkout';
-import Profile from './Profile/Profile';
-import ListYourCar from './ListYourCar';
+import Home from '../components/Home/Home';
+import About from '../components/About/About';
+import Contact from '../components/Contact/Contact';
+import Cars from '../components/CarComponents/Cars/Cars';
+import CarDetail from '../components/CarComponents/CarDetail/CarDetail';
+import Blog from '../components/Blog/Blog';
+import BlogPost from '../components/Blog/BlogPost/BlogPost';
+import Checkout from '../components/Checkout/Checkout';
+import Profile from '../components/Profile/Profile';
+import ListYourCar from '../components/ListYourCar/ListYourCar';
 const App = () => (
   <BrowserRouter>
     <div>

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Navbar from '../Navbar.js';
+import Navbar from '../Navbar/Navbar.js';
 import Breadcrumb from '../Breadcrumbs/Breadcrumb.js';
 import ContactUs from './ContactUsContainer.js';
-import Footer from '../Footer.js';
+import Footer from '../Footer/Footer.js';
 class Contact extends Component{
   state ={
     title: "Contact Us",

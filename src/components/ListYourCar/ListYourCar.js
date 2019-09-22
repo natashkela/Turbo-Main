@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
-import Navbar from './Navbar.js';
-import BreadcrumbTernary from './Breadcrumbs/BreadcrumbTernary';
+import Navbar from '../Navbar/Navbar.js';
+import BreadcrumbTernary from '../Breadcrumbs/BreadcrumbTernary';
 import ListYourCarTabContent from './ListYourCarTabContent';
-import Footer from './Footer.js';
+import Footer from '../Footer/Footer.js';
 class ListYourCar extends Component{
   state = {
     isLoggedIn:false,

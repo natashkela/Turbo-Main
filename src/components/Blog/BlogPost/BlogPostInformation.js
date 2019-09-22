@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 const BlogPostInformation = ({blog,categories})=>{
-  let bgImage = require("../../../img/post-single/single-post-author.jpg");
+  let bgImage = require("../../../assets/img/post-single/single-post-author.jpg");
   return (
     <div className="blog-post-information">
       <div className="rq-single-post-header row">

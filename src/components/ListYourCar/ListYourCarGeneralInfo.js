@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import CountryListSelect from './CountryListSelect';
-import CityListSelect from './CityListSelect';
+import CountryListSelect from '../CountryCitySelectors/CountryListSelect';
+import CityListSelect from '../CountryCitySelectors/CityListSelect';
 class ListYourCarGeneralInfo extends Component {
   state={
     carLocationCountry:"",

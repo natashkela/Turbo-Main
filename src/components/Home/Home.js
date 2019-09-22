@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import IndexHeader from './IndexHeader.js';
+import IndexHeader from './IndexHeader/IndexHeader.js';
 import IndexIntroduction from './IndexIntroduction/IndexIntroduction.js';
 import CarListingTabContainer from '../CarComponents/CarListingInTabs/CarListingTabContainer.js';
 import PartnerImageContainer from './PartnerImageContainer.js';
 import TestimonialsContainer from '../Testimonials/TestimonialsContainer.js';
 import RecentTipsContainer from '../RecentTips/RecentTipsContainer.js';
 import CallSupportContainer from './CallSupportContainer.js';
-import Footer from '../Footer.js';
+import Footer from '../Footer/Footer.js';
 class App extends Component {
   render() {
     return (

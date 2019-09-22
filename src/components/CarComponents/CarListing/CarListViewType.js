@@ -8,7 +8,7 @@ const CarListViewType = ({list,viewType})=>{
           <div key={index} className="col-md-4 col-sm-6">
             <div className="listing-single">
               <div className="listing-img">
-                <img src={require("../../../img/car-listing-grid/car"+grid.id+".jpg")} alt="" />
+                <img src={require("../../../assets/img/car-listing-grid/car"+grid.id+".jpg")} alt="" />
               </div>
               <div className="listing-details">
                 <h5 className="car-brand">{grid.brand}</h5>
