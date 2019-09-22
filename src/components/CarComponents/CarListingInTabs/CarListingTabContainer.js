@@ -56,7 +56,7 @@ class CarListingTabContainer extends Component {
         ]
       },
       {
-            name: "New Cars",
+            name: "New CarComponents",
             isActive: false,
             cars:[
               {

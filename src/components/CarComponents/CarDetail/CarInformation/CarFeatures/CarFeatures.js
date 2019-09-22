@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import PropTypes from 'prop-types';
-import CarReview from './CarReview.js';
-import CarDescription from './CarDescription.js';
+import CarReview from '../CarReview/CarReview.js';
+import CarDescription from '../CarDescription.js';
 import CarFeaturesList from './CarFeaturesList.js';
 class CarFeatures extends Component{
   state = {

@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
-import Navbar from '../Navbar.js';
-import Breadcrumb from '../Breadcrumb.js';
-import Searchbox from '../Searchbox.js';
-import CarListing from './CarListing/CarListing.js';
-import Footer from '../Footer.js';
+import Navbar from '../../Navbar.js';
+import Breadcrumb from '../../Breadcrumb.js';
+import Searchbox from '../../Searchbox.js';
+import CarListing from '../CarListing/CarListing.js';
+import Footer from '../../Footer.js';
 class Cars extends Component{
   state ={
     title: "Car Listing",

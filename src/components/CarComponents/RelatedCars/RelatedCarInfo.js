@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import RelatedCars from './RelatedCars.js';
-import Faqs from './Faqs.js';
+import Faqs from '../../Faqs.js';
 const RelatedCarInfo = ({relatedCars, faqs, toggleFaq}) => {
   return (
     <div className="rq-content-block">

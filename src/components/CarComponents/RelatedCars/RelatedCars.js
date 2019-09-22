@@ -9,7 +9,7 @@ const RelatedCars = ({relatedCars}) => {
         {relatedCars.map((car,index)=>
           <li key={index}>
             <a>
-              <img src={require("../img/listing-details-tab/tab-image"+car.id+".png")} alt="" />
+              <img src={require("../../../img/listing-details-tab/tab-image"+car.id+".png")} alt="" />
               <span className="tittle">{car.title}</span>
               <span className="car-des">{car.description}</span>
               <span className="rent-price">${car.price}<b>/Day</b></span>

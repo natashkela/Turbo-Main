@@ -8,8 +8,8 @@ import {
 import Home from './Home/Home';
 import About from './About/About';
 import Contact from './Contact/Contact';
-import Cars from './Cars/Cars';
-import CarDetail from './CarDetail';
+import Cars from './CarComponents/Cars/Cars';
+import CarDetail from './CarComponents/CarDetail/CarDetail';
 import Blog from './Blog';
 import BlogPost from './BlogPost';
 import Checkout from './Checkout';

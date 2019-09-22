@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
-import Navbar from './Navbar.js';
+import Navbar from '../../Navbar.js';
 import BookCarSection from './BookCarSection.js'
-import CarInformation from './CarInformation.js';
-import RelatedCarInfo from './RelatedCarInfo.js';
-import Footer from './Footer.js';
+import CarInformation from './CarInformation/CarInformation.js';
+import RelatedCarInfo from '../RelatedCars/RelatedCarInfo.js';
+import Footer from '../../Footer.js';
 class CarDetail extends Component{
   state={
      title: "Toyota Prado",
@@ -13,7 +13,7 @@ class CarDetail extends Component{
         href: "/"
       },
       {
-        title:"All Cars",
+        title:"All CarComponents",
         href:"/cars"
       },
       {

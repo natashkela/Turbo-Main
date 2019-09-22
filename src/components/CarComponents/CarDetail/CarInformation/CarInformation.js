@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CarFeatures from './CarFeatures.js';
+import CarFeatures from './CarFeatures/CarFeatures.js';
 import CarLocation from './CarLocation.js';
 import MainCarFeatures from './MainCarFeatures.js';
-import BreadcrumbSecondary from './BreadcrumbSecondary';
+import BreadcrumbSecondary from '../../../BreadcrumbSecondary';
 const CarInformation = ({breadcrumbs,title,car,reviews,submitReview}) => {
   return (
     <div>
