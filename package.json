@@ -9,6 +9,7 @@
     "prop-types": "^15.6.2",
     "rc-slider": "^8.6.4",
     "react": "^16.6.3",
+    "react-bootstrap": "^0.32.4",
     "react-country-region-selector": "^1.4.3",
     "react-countup": "^4.0.0",
     "react-dom": "^16.6.3",

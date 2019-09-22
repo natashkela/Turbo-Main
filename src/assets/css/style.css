@@ -193,7 +193,8 @@ body {
   min-height:500px;
 }
 
-.list-your-car-container{
+.list-your-car-container,
+.profile-container{
   min-height:900px;
 }
 
@@ -205,6 +206,11 @@ span.more-info{
 .phone-number-input{
   height:50px!important;
   width:400px!important;
+}
+
+.profile-phone-number{
+  padding: 26px;
+  width: 100%!important;
 }
 
 .dropdown-item {
@@ -220,10 +226,44 @@ span.more-info{
     border: 0;
 }
 
+.region-select-profile{
+  height:56px!important;
+}
+
 .list-your-car-xs-navigation .active,
 .dropdown-item:hover{
   color:white;
   background-color:#efa80f;
+}
+
+.pricing-daily-dollar{
+  width:50px;
+  font-weight:bold;
+  background-color:#efa80f;
+  border-color:#efa80f;
+}
+
+.pricing .p{
+  margin-top:10px;
+}
+
+.pricing-daily{
+  padding:25px;
+  border-radius:0;
+}
+
+.pricing-daily:focus{
+  border-color:black;
+  box-shadow:none;
+}
+
+.default-price-section{
+  padding-bottom:40px;
+  border-bottom:1px solid #ccc;
+}
+
+.airport-pickup-price .pricing-daily{
+  width:180px;
 }
 
 @media (max-width:767px){
@@ -247,6 +287,10 @@ span.more-info{
 
   .information-box{
     margin-top:20px;
+  }
+
+  .airport-pickup-price{
+    margin-top:13px;
   }
 
 }
