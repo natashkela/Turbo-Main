@@ -26,8 +26,8 @@ const App = () => (
       <Route path="/blog" component={Blog} />
       <Route path="/blog-post" component={BlogPost} />
       <Route path="/checkout" component={Checkout} />
-      <Route path="/profile" component={Profile} />
       <Route path="/list-your-car" component={ListYourCar} />
+      <Route path="/profile" component={Profile} />
     </div>
   </BrowserRouter>
 );
