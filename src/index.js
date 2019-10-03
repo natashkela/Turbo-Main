@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './containers/App';
+import App from './App';
 import './assets/css/turbo.style.css';
 import './assets/css/style.css';
 

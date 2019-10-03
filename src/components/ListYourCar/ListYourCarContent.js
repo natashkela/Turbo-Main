@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ListYourCarGeneralInfo from './ListYourCarGeneralInfo';
+import ListYourCarGeneralInfo from '../../containers/ListYourCar/ListYourCarGeneralInfo';
 import ListYourCarProfilePhoto from './ListYourCarProfilePhoto';
 import ListYourCarMobileNumber from './ListYourCarMobileNumber';
-import ListYourCarDetails from './ListYourCarDetails';
+import ListYourCarDetails from '../../containers/ListYourCar/ListYourCarDetails';
 import ListYourCarAvailability from './ListYourCarAvailability';
-import ListYourCarPhotos from './ListYourCarPhotos';
+import ListYourCarPhotos from '../../containers/ListYourCar/ListYourCarPhotos';
 const ListYourCarContent = ({tab, isLoggedIn, customerInformation}) => {
   return (
     <div>

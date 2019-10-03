@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Comment from './Comment';
-import LeaveComent from './LeaveComment';
+import LeaveComent from '../../../../containers/Blog/BlogPost/BlogPostComments/LeaveComment';
 const BlogPostComments = ({comments,submitComment}) => {
   return (
     <div id="comments" className="post-comment-section">
