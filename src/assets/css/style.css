@@ -69,69 +69,6 @@ body {
   margin-top:100px;
 }
 
-.width-auto{
-  width:auto;
-}
-
-.margin-top-0{
-  margin-top:0;
-}
-
-.margin-top-5{
-  margin-top:5px;
-}
-
-.margin-top-10{
-  margin-top:10px;
-}
-
-.margin-top-15{
-  margin-top:15px;
-}
-
-.margin-top-30{
-  margin-top:30px;
-}
-
-.margin-top-40{
-  margin-top:40px;
-}
-
-.margin-top-60{
-  margin-top:60px;
-}
-
-.margin-right-5{
-  margin-right:5px!important;
-}
-
-.margin-bottom-0{
-  margin-bottom:0;
-}
-
-.margin-bottom-15{
-  margin-bottom:15px;
-}
-
-.margin-bottom-40{
-  margin-bottom:40px;
-}
-
-.margin-left-5{
-  margin-left:5px;
-}
-
-.margin-left-60{
-  margin-left:60px;
-}
-
-.black{
-  color:black;
-}
-
-.no-border{
-  border:none!important;
-}
 
 .checkout .author-img{
   float:left;
@@ -145,6 +82,8 @@ body {
   padding: 37px;
   margin-left: 45px;
 }
+
+.rq-form-control{margin-bottom:10px;}
 
 .select-transparent .rq-form-control{
   margin-bottom:0px;
@@ -266,6 +205,70 @@ span.more-info{
   width:180px;
 }
 
+/**--------------------------------- General Classes Start --------------------------------- */
+.width-auto{
+  width:auto;
+}
+
+.margin-top-0{
+  margin-top:0;
+}
+.margin-top-5{
+  margin-top:5px;
+}
+.margin-top-10{
+  margin-top:10px;
+}
+.margin-top-15{
+  margin-top:15px;
+}
+.margin-top-30{
+  margin-top:30px;
+}
+.margin-top-40{
+  margin-top:40px;
+}
+.margin-top-60{
+  margin-top:60px;
+}
+
+.margin-right-5{
+  margin-right:5px!important;
+}
+
+.margin-bottom-0{
+  margin-bottom:0;
+}
+.margin-bottom-15{
+  margin-bottom:15px;
+}
+.margin-bottom-40{
+  margin-bottom:40px;
+}
+
+.margin-left-5{
+  margin-left:5px;
+}
+.margin-left-10{margin-left:10px;}
+.margin-left-60{
+  margin-left:60px;
+}
+
+.padding-sides-20{
+  padding: 0 50px;
+}
+
+.font-12{font-size:12px;}
+
+.black{
+  color:black;
+}
+
+.no-border{
+  border:none!important;
+}
+/**--------------------------------- General Classes End --------------------------------- */
+/**--------------------------------- Media Queries Start --------------------------------- */
 @media (max-width:767px){
   .list-your-car-general-info .col-xs-12{
     margin-top:10px!important;
@@ -294,3 +297,4 @@ span.more-info{
   }
 
 }
+/**--------------------------------- Media Queries End ----------------------------------- */
