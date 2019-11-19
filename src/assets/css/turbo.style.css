@@ -14881,9 +14881,12 @@ input.comment-input:-ms-input-placeholder, textarea.comment-input:-ms-input-plac
     transition: .3s;
     transition: all .3s ease;
 }
-.rq-contact-us-map, .rq-registration-content-single {
+.rq-contact-us-map {
     margin-bottom: 90px;
     position: relative;
+}
+.rq-registration-content-single{
+    position:relative;
 }
 .listing-single, .rq-form-control {
     -webkit-transition: .3s;

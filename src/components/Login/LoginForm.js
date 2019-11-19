@@ -27,7 +27,7 @@ const LoginForm = () => {
                             <div className="row">
                                 <div className="col-xs-12 col-sm-12 col-md-10 col-lg-8">
                                     {formElements.map((element,index) =>
-                                        <div className="width-100">
+                                        <div className="width-100" key={'form_element_'+element.name} >
                                             <input type={element.type} name={element.name} className="rq-form-control"
                                                    placeholder={element.placeholder} />
                                         </div>
@@ -37,7 +37,7 @@ const LoginForm = () => {
                                         <div className="font-12">By logging in, you are accepting <a href="#">Terms and Conditions</a></div>
                                     </div>
                                     <div className="width-100">
-                                        <CheckboxContainer name='keep-me-logged-in' text='Keep me logged in'/>
+                                        <CheckboxContainer name='keep-me-logged-in' checkboxText='Keep me logged in'/>
                                         <div className="forgotpass">
                                             <a href="#">Forgot your password ?</a>
                                         </div>

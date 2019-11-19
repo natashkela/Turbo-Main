@@ -24,7 +24,7 @@ class Login extends Component{
                 <Navbar />
                 <div className="rq-page-content">
                     <div className={`rq-content-block ${classes.rqContentBlock}`}>
-                        <div className="row">
+                        <div className={`row ${classes.mobileReverse}`}>
                             <RegisterForm />
                             <LoginForm />
                         </div>
