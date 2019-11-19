@@ -209,6 +209,7 @@ span.more-info{
 .width-auto{
   width:auto;
 }
+.width-100{width:100%;}
 
 .margin-top-0{
   margin-top:0;
@@ -266,6 +267,12 @@ span.more-info{
 
 .no-border{
   border:none!important;
+}
+.display-flex-center{
+  display:flex;
+  flex-flow:column;
+  justify-content:center;
+  align-items:center;
 }
 /**--------------------------------- General Classes End --------------------------------- */
 /**--------------------------------- Media Queries Start --------------------------------- */
