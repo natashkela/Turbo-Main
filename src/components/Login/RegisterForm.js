@@ -61,7 +61,7 @@ const RegisterForm = ()=> {
                                             </div>
                                         )}
                                     <div className="col-xs-12 col-sm-12 col-md-10 col-lg-8">
-                                        <CheckboxContainer name='accept-terms' text='Accept Terms & Conditions'/>
+                                        <CheckboxContainer name='accept-terms' checkboxText='Accept Terms & Conditions'/>
                                     </div>
                                     <div className="col-xs-12 col-sm-12 col-md-10 col-lg-8">
                                         <div className="register-button display-flex-center">

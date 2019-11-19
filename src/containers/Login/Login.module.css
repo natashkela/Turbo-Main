@@ -6,3 +6,9 @@
 .rqRegistrationContentSingle form{
     padding:0!important;
 }
+@media (max-width:991px) {
+    .mobileReverse{
+        display:flex;
+        flex-flow:column-reverse;
+    }
+}
