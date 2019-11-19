@@ -1,0 +1,8 @@
+.rqContentBlock{
+    padding: 30px!important;
+}
+
+.rqLoginForm form,
+.rqRegistrationContentSingle form{
+    padding:0!important;
+}

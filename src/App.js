@@ -15,6 +15,7 @@ import BlogPost from './containers/Blog/BlogPost/BlogPost';
 import Checkout from './containers/Checkout/Checkout';
 import Profile from './containers/Profile/Profile';
 import ListYourCar from './containers/ListYourCar/ListYourCar';
+import Login from './containers/Login/Login';
 const App = () => (
   <BrowserRouter>
     <div>
@@ -28,6 +29,7 @@ const App = () => (
       <Route path="/checkout" component={Checkout} />
       <Route path="/list-your-car" component={ListYourCar} />
       <Route path="/profile" component={Profile} />
+      <Route path="/login" component={Login} />
     </div>
   </BrowserRouter>
 );

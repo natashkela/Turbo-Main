@@ -12139,7 +12139,7 @@ to {
     z-index: 99;
 }
 .navbar .navbar-nav li a {
-    padding: 15px 0 5px;
+    padding: 12px 0 5px;
 }
 .navbar .navbar-nav li.right-side-link {
     top: 15px;
@@ -14932,35 +14932,34 @@ textarea.contact-form-input {
 .rq-registration-content-single .rq-login-form {
     position: relative;
     padding: 0 0 60px;
-    border-bottom: 1px solid #f3f3f3;
 }
 .rq-registration-content-single .rq-login-form.no-border {
     border-bottom: 0;
     padding-bottom: 0;
 }
-.rq-registration-content-single .rq-login-form .remember-me {
+.rq-registration-content-single .rq-login-form .checkbox-container {
     position: relative;
 }
 @media (max-width:992px) {
-    .rq-registration-content-single .rq-login-form .remember-me {
+    .rq-registration-content-single .rq-login-form .checkbox-container {
     margin-top: 15px;
 }
-}.rq-registration-content-single .rq-login-form .remember-me .rq-checkbox {
+}.rq-registration-content-single .rq-login-form .checkbox-container .rq-checkbox {
     padding-right: 50px;
 }
-.rq-registration-content-single .rq-login-form .remember-me .rq-checkbox label {
+.rq-registration-content-single .rq-login-form .checkbox-container .rq-checkbox label {
     font-size: 13px;
     padding-left: 23px;
 }
-.rq-registration-content-single .rq-login-form .remember-me .rq-checkbox label:before {
-    top: -1px;
+.rq-registration-content-single .rq-login-form .checkbox-container .rq-checkbox label:before {
+    top: -3px;
     font-size: 14px;
 }
 @media (max-width:400px) {
-    .rq-registration-content-single .rq-login-form .remember-me .forgotpass {
+    .rq-registration-content-single .rq-login-form .forgotpass {
     display: block;
 }
-}.rq-registration-content-single .rq-login-form .remember-me .forgotpass a {
+}.rq-registration-content-single .rq-login-form .forgotpass a {
     color: #3cc;
     font-size: 13px;
 }
@@ -14973,7 +14972,7 @@ textarea.contact-form-input {
     position: relative;
     width: 100%;
     padding-top: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .rq-registration-content-single form .rq-btn {
     height: 55px;

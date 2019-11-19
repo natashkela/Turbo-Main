@@ -7,7 +7,7 @@ const Navbar = ({isLoggedIn,hasCar}) => {
   let navigationItems = JSON.parse(nav);
   return (
     <nav className="navbar navbar-default" id="sticker">
-      <div className="container">
+      <div className="container-fluid padding-sides-20">
         <div className="navbar-header">
           <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span className="sr-only">Toggle navigation</span>

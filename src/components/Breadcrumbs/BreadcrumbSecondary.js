@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-const BreadcrumbSecondary = ({breadcrumbs,title})=>{
+const BreadcrumbSecondary = ({breadcrumbs,title, noCenter})=>{
+    const classTextCenter = !noCenter ? 'text-center' : '';
   return(
-    <div className="rq-title-container bredcrumb-title text-center">
+    <div className={`rq-title-container bredcrumb-title ${classTextCenter}`}>
       <h1 className="rq-title light">{title}</h1>
       <ol className="breadcrumb rq-subtitle">
         {breadcrumbs.map((breadcrumb,index)=>
@@ -13,7 +14,8 @@ const BreadcrumbSecondary = ({breadcrumbs,title})=>{
   );
 }
 BreadcrumbSecondary.propTypes = {
-  breadcrumbs: PropTypes.array,
-  title:PropTypes.string
+  breadcrumbs: PropTypes.array.isRequired,
+  title:PropTypes.string.isRequired,
+  noCenter: PropTypes.bool
 }
 export default BreadcrumbSecondary;
