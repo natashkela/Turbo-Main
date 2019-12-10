@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../../assets/fonts/Montserrat-Regular.eot?) format("eot"), url(../../assets/fonts/Montserrat-Regular.woff) format("woff"), url(../../assets/fonts/Montserrat-Regular.ttf) format("truetype"), url(../../assets/fonts/Montserrat-Regular.svg#Montserrat-Regular) format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+.SearchboxInput input{
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #999999;
+    padding: 6px;
+    width: 200px;
+    margin-left: 11px;
+    font-family:Montserrat-Regular!important;
+    color:#999999;
+}
+.SearchboxInput input::placeholder{
+    color:#999999;
+    font-family:Montserrat-Regular;
+}
+.SearchboxInputDatePicker input{
+     padding: 5px;
+    width:auto;
+     font-family: Montserrat-Regular, 'sans-serif';
+     color: #999999;
+ }

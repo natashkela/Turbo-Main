@@ -4,6 +4,7 @@ import BookCarSection from '../../../components/Cars/CarDetail/BookCarSection.js
 import CarInformation from '../../../components/Cars/CarDetail/CarInformation/CarInformation.js';
 import RelatedCarInfo from '../../../components/Cars/RelatedCars/RelatedCarInfo/RelatedCarInfo.js';
 import Footer from '../../../components/Footer/Footer.js';
+import Searchbox from "../../../components/Searchbox/Searchbox";
 class CarDetail extends Component{
   state={
      title: "Toyota Prado",
@@ -147,7 +148,7 @@ class CarDetail extends Component{
   render(){
     return(
       <div className="car-detail">
-        <Navbar />
+        <Navbar includeSearchbox={true}/>
         <div className="rq-page-content">
           <div className="rq-listing-details">
             <CarInformation breadcrumbs={this.state.breadcrumbs} title={this.state.title} car={this.state.car} reviews={this.state.reviews} submitReview={this.handleSubmitReview.bind(this)}/>

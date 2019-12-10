@@ -1496,6 +1496,70 @@ select[multiple].input-lg, textarea.input-lg {
     bottom: 100%;
     margin-bottom: 2px;
 }
+.DateRangePickerInput__withBorder{
+    background:transparent;
+    border-color:transparent;
+}
+.DateInput{
+    background:transparent;
+}
+.DateRangePicker{
+    border-bottom: 1px solid #999999;
+    margin-left: 10px;
+}
+.DateInput_input{
+    font-size: 14px;
+    color: #999999;
+    margin-left:0!important;
+    transition-property: none!important;
+    background:transparent;
+    width:auto;
+    padding: 4px 18px 4px 0px;
+}
+.DateInput_1{
+    margin-left:30px;
+}
+.DateRangePickerInput_arrow{
+    margin-top:-4px;
+}
+.DateInput_input__focused{
+    background:transparent;
+    border-bottom:none;
+}
+.CalendarDay__selected_span {
+   background: #efa80fad;
+    color: white;
+    border: 1px solid #efa80fad;
+}
+.CalendarDay__selected_span:hover{
+    background:#efa80f;
+    border-color:#efa80f;
+}
+
+.CalendarDay__selected {
+   background: #efa80f;
+   color: white;
+   border:1px solid #efa80f;
+}
+
+.CalendarDay__selected:hover {
+   background: #efa80f;
+   color: white;
+   border:1px solid #efa80fad;
+}
+
+.CalendarDay__hovered_span:hover,
+.CalendarDay__hovered_span {
+   background: #efa80fad;
+   border-color:#efa80fad;
+}
+
+.DayPickerKeyboardShortcuts_show__bottomRight::before{
+    border-right-color:#efa80f;
+}
+.DayPickerKeyboardShortcuts_show__bottomRight:hover::before{
+    border-right-color:#efa80fad;
+}
 @media (min-width:992px) {
     .navbar-right .dropdown-menu {
     left: auto;
@@ -7111,14 +7175,16 @@ a {
 .rq-btn-normal i {
     padding-left: 6px;
 }
-input[type=text].rq-form-element {
+input[type=text].rq-form-element,
+input[type=date].rq-form-element{
     position: relative;
     width: 100%;
     outline: 0;
     font-family: Poppins, sans-serif;
     font-size: 14px;
 }
-input[type=text].rq-form-element:focus {
+input[type=text].rq-form-element:focus,
+input[type=date].rq-form-element:focus{
     outline: 0;
 }
 input[type=text].fq-newsletter-form {
@@ -12177,7 +12243,8 @@ to {
     margin-left: 0;
 }
 .navbar .navbar-nav li.login-register-link a {
-    padding: 15px 10px!important;
+    line-height: 19px;
+    padding: 10px 10px!important;
 }
 }.navbar .navbar-nav li.login-register-link i {
     padding-right: 5px;
@@ -17481,6 +17548,10 @@ textarea.contact-form-input {
     top: 50%;
     line-height: 1;
     color: #efa80f;
+}
+.pickup-location{
+    -webkit-transition: width 2s;
+    transition: width 2s;
 }
 .owl-loop .owl-item, .owl-loop .owl-item h5, .owl-loop .owl-item.center {
     position: relative;

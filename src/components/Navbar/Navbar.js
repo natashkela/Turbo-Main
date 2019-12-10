@@ -1,10 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import companyLogo from '../../assets/img/company-logo.png';
-import NavbarItem from './Navbar-Item.js'
-const Navbar = ({isLoggedIn,hasCar}) => {
+import NavbarItem from './Navbar-Item.js';
+import classes from './Navbar.module.css';
+import 'react-dates/initialize';
+import { DateRangePicker, SingleDatePicker, DayPickerRangeController } from 'react-dates';
+import DateRangePickerWrapper from '../DateRangePickerWrapper/DateRangePickerWrapper';
+import 'react-dates/lib/css/_datepicker.css';
+import { CSSTransition } from 'react-transition-group';
+// import HeaderSearchbox from '../../components/Searchbox/HeaderSearchbox.js';
+const Navbar = ({isLoggedIn,hasCar, includesSearchbox}) => {
   let nav ='{"main":[ { "mainMenuItem":{ "name":"Home", "href":"index.html" }, "dropdownMenuItems":{} }, { "mainMenuItem":{ "name":"Listing", "href":"car-listing-grid.html" }, "dropdownMenuItems":[ { "name":"Car listing grid", "href":"car-listing-grid.html" }, { "name":"Car listing list", "href":"car-listing-list.html" }, { "name":"ListingDetails", "href":"listing-detail.html" } ] }, { "mainMenuItem":{ "name":"Blog", "href":"blog-listing.html" }, "dropdownMenuItems":[ { "name":"Blog Listing", "href":"blog-listing.html" }, { "name":"Blog Post", "href":"post-single.html" } ] }, { "mainMenuItem":{ "name":"Page", "href":"#" }, "dropdownMenuItems":[ { "name":"About", "href":"about-us.html" }, { "name":"Contact Us", "href":"contact-us.html" }, { "name":"Checkout", "href":"checkout.html" }, { "name":"Shopping Cart", "href":"shopping-cart.html" }, { "name":"Registration", "href":"registration.html" } ] }]}';
   let navigationItems = JSON.parse(nav);
+  let headerSearchbox = '';
+  // if(includesSearchbox){
+  //   headerSearchbox = <Searchbox />
+  // }
   return (
     <nav className="navbar navbar-default" id="sticker">
       <div className="container-fluid padding-sides-20">
@@ -16,6 +27,100 @@ const Navbar = ({isLoggedIn,hasCar}) => {
             <span className="icon-bar"></span>
           </button>
           <a className="navbar-brand" href="index.html"><img src={companyLogo} alt="" /></a>
+          <div className="pull-left display-flex">
+                <div className={classes.SearchboxInput}>
+                      <input type="text" className="rq-form-element pickup-location" placeholder="Pickup Location" />
+                </div>
+            <div>
+              <DateRangePickerWrapper
+                  anchorDirection="left"
+                  autoFocus={false}
+                  autoFocusEndDate={false}
+                  block={false}
+                  customArrowIcon={null}
+                  customCloseIcon={null}
+                  customInputIcon={null}
+                  disabled={false}
+                  // displayFormat={function noRefCheck(){}}
+                  enableOutsideDays={false}
+                  endDateId="endDate"
+                  endDatePlaceholderText="End Date"
+                  horizontalMargin={0}
+                  initialEndDate={null}
+                  initialStartDate={null}
+                  initialVisibleMonth={null}
+                  // isDayBlocked={function noRefCheck(){}}
+                  // isDayHighlighted={function noRefCheck(){}}
+                  // isOutsideRange={function noRefCheck(){}}
+                  isRTL={false}
+                  keepOpenOnDateSelect={false}
+                  minimumNights={1}
+                  monthFormat="MMMM YYYY"
+                  navNext={null}
+                  navPosition="navPositionTop"
+                  navPrev={null}
+                  numberOfMonths={2}
+                  // onClose={function noRefCheck(){}}
+                  // onNextMonthClick={function noRefCheck(){}}
+                  // onPrevMonthClick={function noRefCheck(){}}
+                  orientation="horizontal"
+                  phrases={{
+                    calendarLabel: 'Calendar',
+                    // chooseAvailableEndDate: function noRefCheck(){},
+                    // chooseAvailableStartDate: function noRefCheck(){},
+                    clearDates: 'Clear Dates',
+                    closeDatePicker: 'Close',
+                    // dateIsSelected: function noRefCheck(){},
+                    // dateIsSelectedAsEndDate: function noRefCheck(){},
+                    // dateIsSelectedAsStartDate: function noRefCheck(){},
+                    // dateIsUnavailable: function noRefCheck(){},
+                    enterKey: 'Enter key',
+                    escape: 'Escape key',
+                    focusStartDate: 'Interact with the calendar and add the check-in date for your trip.',
+                    hideKeyboardShortcutsPanel: 'Close the shortcuts panel.',
+                    homeEnd: 'Home and end keys',
+                    jumpToNextMonth: 'Move forward to switch to the next month.',
+                    jumpToPrevMonth: 'Move backward to switch to the previous month.',
+                    keyboardBackwardNavigationInstructions: 'Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.',
+                    keyboardForwardNavigationInstructions: 'Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.',
+                    keyboardShortcuts: 'Keyboard Shortcuts',
+                    leftArrowRightArrow: 'Right and left arrow keys',
+                    moveFocusByOneDay: 'Move backward (left) and forward (right) by one day.',
+                    moveFocusByOneMonth: 'Switch months.',
+                    moveFocusByOneWeek: 'Move backward (up) and forward (down) by one week.',
+                    moveFocustoStartAndEndOfWeek: 'Go to the first or last day of a week.',
+                    openThisPanel: 'Open this panel.',
+                    pageUpPageDown: 'page up and page down keys',
+                    questionMark: 'Question mark',
+                    returnFocusToInput: 'Return to the date input field.',
+                    roleDescription: 'datepicker',
+                    selectFocusedDate: 'Select the date in focus.',
+                    showKeyboardShortcutsPanel: 'Open the keyboard shortcuts panel.',
+                    upArrowDownArrow: 'up and down arrow keys'
+                  }}
+                  regular={false}
+                  renderCalendarDay={undefined}
+                  renderDayContents={null}
+                  renderMonthText={null}
+                  reopenPickerOnClearDates={false}
+                  required={false}
+                  screenReaderInputMessage=""
+                  showClearDates={false}
+                  showDefaultInputIcon={false}
+                  small={false}
+                  startDateId="startDate"
+                  startDatePlaceholderText="Start Date"
+                  // stateDateWrapper={function noRefCheck(){}}
+                  withFullScreenPortal={false}
+                  withPortal={false}
+              />
+              {/*<input type="date" className="rq-form-element datepicker" />*/}
+            </div>
+            {/*<div className={`${classes.SearchboxInput} ${classes.SearchboxInputDatePicker}`}>*/}
+            {/*  <input type="date" className="rq-form-element datepicker" />*/}
+            {/*</div>*/}
+          </div>
+          <div className="clearfix"></div>
         </div>
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul className="nav navbar-nav navbar-right">
@@ -71,6 +176,8 @@ const Navbar = ({isLoggedIn,hasCar}) => {
   );
 }
 Navbar.propTypes = {
-  isLoggedIn: PropTypes.bool
+  isLoggedIn: PropTypes.bool,
+  hasCar: PropTypes.bool,
+  includesSearchbox: PropTypes.bool
 }
 export default Navbar;
