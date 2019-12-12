@@ -11,7 +11,7 @@ import DateRangePickerShape from 'react-dates/src/shapes/DateRangePickerShape';
 import {
     START_DATE,
     END_DATE,
-    HORIZONTAL_ORIENTATION,
+    VERTICAL_ORIENTATION,
     ANCHOR_LEFT,
     NAV_POSITION_TOP,
 } from 'react-dates/src/constants';
@@ -60,11 +60,11 @@ const defaultProps = {
 
     // calendar presentation and interaction related props
     renderMonthText: null,
-    orientation: HORIZONTAL_ORIENTATION,
+    orientation: VERTICAL_ORIENTATION,
     anchorDirection: ANCHOR_LEFT,
     horizontalMargin: 0,
     withPortal: false,
-    withFullScreenPortal: false,
+    withFullScreenPortal: true,
     initialVisibleMonth: null,
     numberOfMonths: 2,
     keepOpenOnDateSelect: false,

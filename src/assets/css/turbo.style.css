@@ -1560,6 +1560,13 @@ select[multiple].input-lg, textarea.input-lg {
 .DayPickerKeyboardShortcuts_show__bottomRight:hover::before{
     border-right-color:#efa80fad;
 }
+@media (max-width:768px) {
+    .DateInput_1{margin-left:0px;}
+    /*.DateInput_1 #endDate{margin-left:10px!important;}*/
+    .DateRangePickerInput_arrow{display:none;}
+    .DateRangePickerInput__withBorder,.DateRangePicker{width:100%;margin-left:0;}
+    .DateInput{width:auto;}
+}
 @media (min-width:992px) {
     .navbar-right .dropdown-menu {
     left: auto;
@@ -12069,12 +12076,13 @@ to {
 }
 @media (max-width:768px) {
     .header .header-body {
-    height: auto;
-    padding-top: 100px;
-    background-size: cover!important;
-    padding-bottom: 75px;
+        height: auto;
+        padding-top: 100px;
+        background-size: cover!important;
+        padding-bottom: 75px;
+    }
 }
-}.header .header-body .header-overlay {
+.header .header-body .header-overlay {
     position: absolute;
     width: 100%;
     height: 100%;

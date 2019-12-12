@@ -27,14 +27,16 @@ const Navbar = ({isLoggedIn,hasCar, includesSearchbox}) => {
             <span className="icon-bar"></span>
           </button>
           <a className="navbar-brand" href="index.html"><img src={companyLogo} alt="" /></a>
-          <div className="pull-left display-flex">
-                <div className={classes.SearchboxInput}>
-                      <input type="text" className="rq-form-element pickup-location" placeholder="Pickup Location" />
-                </div>
-            <div>
+        </div>
+          <div className="all-menu-items-container">
+        <div className={classes.SearchboxContainer}>
+          <div className={classes.SearchboxInput}>
+              <input type="text" className="rq-form-element pickup-location" placeholder="Pickup Location" />
+          </div>
+          <div>
               <DateRangePickerWrapper
                   anchorDirection="left"
-                  autoFocus={false}
+                  autoFocus
                   autoFocusEndDate={false}
                   block={false}
                   customArrowIcon={null}
@@ -59,44 +61,44 @@ const Navbar = ({isLoggedIn,hasCar, includesSearchbox}) => {
                   navNext={null}
                   navPosition="navPositionTop"
                   navPrev={null}
-                  numberOfMonths={2}
+                  numberOfMonths={1}
                   // onClose={function noRefCheck(){}}
                   // onNextMonthClick={function noRefCheck(){}}
                   // onPrevMonthClick={function noRefCheck(){}}
                   orientation="horizontal"
                   phrases={{
-                    calendarLabel: 'Calendar',
-                    // chooseAvailableEndDate: function noRefCheck(){},
-                    // chooseAvailableStartDate: function noRefCheck(){},
-                    clearDates: 'Clear Dates',
-                    closeDatePicker: 'Close',
-                    // dateIsSelected: function noRefCheck(){},
-                    // dateIsSelectedAsEndDate: function noRefCheck(){},
-                    // dateIsSelectedAsStartDate: function noRefCheck(){},
-                    // dateIsUnavailable: function noRefCheck(){},
-                    enterKey: 'Enter key',
-                    escape: 'Escape key',
-                    focusStartDate: 'Interact with the calendar and add the check-in date for your trip.',
-                    hideKeyboardShortcutsPanel: 'Close the shortcuts panel.',
-                    homeEnd: 'Home and end keys',
-                    jumpToNextMonth: 'Move forward to switch to the next month.',
-                    jumpToPrevMonth: 'Move backward to switch to the previous month.',
-                    keyboardBackwardNavigationInstructions: 'Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.',
-                    keyboardForwardNavigationInstructions: 'Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.',
-                    keyboardShortcuts: 'Keyboard Shortcuts',
-                    leftArrowRightArrow: 'Right and left arrow keys',
-                    moveFocusByOneDay: 'Move backward (left) and forward (right) by one day.',
-                    moveFocusByOneMonth: 'Switch months.',
-                    moveFocusByOneWeek: 'Move backward (up) and forward (down) by one week.',
-                    moveFocustoStartAndEndOfWeek: 'Go to the first or last day of a week.',
-                    openThisPanel: 'Open this panel.',
-                    pageUpPageDown: 'page up and page down keys',
-                    questionMark: 'Question mark',
-                    returnFocusToInput: 'Return to the date input field.',
-                    roleDescription: 'datepicker',
-                    selectFocusedDate: 'Select the date in focus.',
-                    showKeyboardShortcutsPanel: 'Open the keyboard shortcuts panel.',
-                    upArrowDownArrow: 'up and down arrow keys'
+                      calendarLabel: 'Calendar',
+                      // chooseAvailableEndDate: function noRefCheck(){},
+                      // chooseAvailableStartDate: function noRefCheck(){},
+                      clearDates: 'Clear Dates',
+                      closeDatePicker: 'Close',
+                      // dateIsSelected: function noRefCheck(){},
+                      // dateIsSelectedAsEndDate: function noRefCheck(){},
+                      // dateIsSelectedAsStartDate: function noRefCheck(){},
+                      // dateIsUnavailable: function noRefCheck(){},
+                      enterKey: 'Enter key',
+                      escape: 'Escape key',
+                      focusStartDate: 'Interact with the calendar and add the check-in date for your trip.',
+                      hideKeyboardShortcutsPanel: 'Close the shortcuts panel.',
+                      homeEnd: 'Home and end keys',
+                      jumpToNextMonth: 'Move forward to switch to the next month.',
+                      jumpToPrevMonth: 'Move backward to switch to the previous month.',
+                      keyboardBackwardNavigationInstructions: 'Navigate backward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.',
+                      keyboardForwardNavigationInstructions: 'Navigate forward to interact with the calendar and select a date. Press the question mark key to get the keyboard shortcuts for changing dates.',
+                      keyboardShortcuts: 'Keyboard Shortcuts',
+                      leftArrowRightArrow: 'Right and left arrow keys',
+                      moveFocusByOneDay: 'Move backward (left) and forward (right) by one day.',
+                      moveFocusByOneMonth: 'Switch months.',
+                      moveFocusByOneWeek: 'Move backward (up) and forward (down) by one week.',
+                      moveFocustoStartAndEndOfWeek: 'Go to the first or last day of a week.',
+                      openThisPanel: 'Open this panel.',
+                      pageUpPageDown: 'page up and page down keys',
+                      questionMark: 'Question mark',
+                      returnFocusToInput: 'Return to the date input field.',
+                      roleDescription: 'datepicker',
+                      selectFocusedDate: 'Select the date in focus.',
+                      showKeyboardShortcutsPanel: 'Open the keyboard shortcuts panel.',
+                      upArrowDownArrow: 'up and down arrow keys'
                   }}
                   regular={false}
                   renderCalendarDay={undefined}
@@ -115,12 +117,7 @@ const Navbar = ({isLoggedIn,hasCar, includesSearchbox}) => {
                   withPortal={false}
               />
               {/*<input type="date" className="rq-form-element datepicker" />*/}
-            </div>
-            {/*<div className={`${classes.SearchboxInput} ${classes.SearchboxInputDatePicker}`}>*/}
-            {/*  <input type="date" className="rq-form-element datepicker" />*/}
-            {/*</div>*/}
           </div>
-          <div className="clearfix"></div>
         </div>
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul className="nav navbar-nav navbar-right">
@@ -171,6 +168,7 @@ const Navbar = ({isLoggedIn,hasCar, includesSearchbox}) => {
             </li>
           </ul>
         </div>
+          </div>
       </div>
     </nav>
   );

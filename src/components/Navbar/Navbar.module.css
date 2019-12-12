@@ -4,6 +4,10 @@
     font-weight: 400;
     font-style: normal;
 }
+.SearchboxContainer{
+    float:left;
+    display:flex;
+}
 .SearchboxInput input{
     background: transparent;
     border: 0;
@@ -24,3 +28,15 @@
      font-family: Montserrat-Regular, 'sans-serif';
      color: #999999;
  }
+
+@media (max-width:768px) {
+    .SearchboxInput input,
+    .SearchboxInput{
+        width:100%!important;
+        margin-left:0;
+    }
+    .SearchboxContainer{
+        float:none;
+        display:block;
+    }
+}
