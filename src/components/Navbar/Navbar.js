@@ -10,8 +10,52 @@ import 'react-dates/lib/css/_datepicker.css';
 import { CSSTransition } from 'react-transition-group';
 // import HeaderSearchbox from '../../components/Searchbox/HeaderSearchbox.js';
 const Navbar = ({isLoggedIn,hasCar, includesSearchbox}) => {
-  let nav ='{"main":[ { "mainMenuItem":{ "name":"Home", "href":"index.html" }, "dropdownMenuItems":{} }, { "mainMenuItem":{ "name":"Listing", "href":"car-listing-grid.html" }, "dropdownMenuItems":[ { "name":"Car listing grid", "href":"car-listing-grid.html" }, { "name":"Car listing list", "href":"car-listing-list.html" }, { "name":"ListingDetails", "href":"listing-detail.html" } ] }, { "mainMenuItem":{ "name":"Blog", "href":"blog-listing.html" }, "dropdownMenuItems":[ { "name":"Blog Listing", "href":"blog-listing.html" }, { "name":"Blog Post", "href":"post-single.html" } ] }, { "mainMenuItem":{ "name":"Page", "href":"#" }, "dropdownMenuItems":[ { "name":"About", "href":"about-us.html" }, { "name":"Contact Us", "href":"contact-us.html" }, { "name":"Checkout", "href":"checkout.html" }, { "name":"Shopping Cart", "href":"shopping-cart.html" }, { "name":"Registration", "href":"registration.html" } ] }]}';
-  let navigationItems = JSON.parse(nav);
+  // let nav = '{"main":[ { "mainMenuItem":{ "name":"Home", "href":"index.html" }, "dropdownMenuItems":{} }, { "mainMenuItem":{ "name":"Listing", "href":"car-listing-grid.html" }, "dropdownMenuItems":[ { "name":"Car listing grid", "href":"car-listing-grid.html" }, { "name":"Car listing list", "href":"car-listing-list.html" }, { "name":"ListingDetails", "href":"listing-detail.html" } ] }, { "mainMenuItem":{ "name":"Blog", "href":"blog-listing.html" }, "dropdownMenuItems":[ { "name":"Blog Listing", "href":"blog-listing.html" }, { "name":"Blog Post", "href":"post-single.html" } ] }, { "mainMenuItem":{ "name":"Page", "href":"#" }, "dropdownMenuItems":[ { "name":"About", "href":"about-us.html" }, { "name":"Contact Us", "href":"contact-us.html" }, { "name":"Checkout", "href":"checkout.html" }, { "name":"Shopping Cart", "href":"shopping-cart.html" }, { "name":"Registration", "href":"registration.html" } ] }]}';
+  // let navigationItems = JSON.parse(nav);
+    isLoggedIn = true;
+  let navigationItems = {
+      main:[
+          // {
+          //     mainMenuItem: { name:"Home", "href":"index.html" },
+          //     dropdownMenuItems:{}
+          // },
+          // {
+          //     mainMenuItem: { name:"Listing", href:"car-listing-grid.html" },
+          //     dropdownMenuItems:[
+          //         { name:"Car listing grid", href:"car-listing-grid.html" },
+          //         { name:"Car listing list", href:"car-listing-list.html" },
+          //         { name:"ListingDetails", href:"listing-detail.html" } ]
+          // },
+          // {
+          //     mainMenuItem: { name:"Blog", href:"blog-listing.html" },
+          //     dropdownMenuItems:[
+          //         { name:"Blog Listing", href:"blog-listing.html" },
+          //         { name:"Blog Post", href:"post-single.html" } ]
+          // },
+          // {
+          //     mainMenuItem:{ name:"Page", href:"#" },
+          //     dropdownMenuItems:[
+          //         { name:"About", href:"about-us.html" },
+          //         { name:"Contact Us", href:"contact-us.html" },
+          //         { name:"Checkout", href:"checkout.html" },
+          //         { name:"Shopping Cart", href:"shopping-cart.html" },
+          //         { name:"Registration", href:"registration.html" } ]
+          // }
+          {
+              mainMenuItem:{ name:"Learn More", href:"#" },
+              dropdownMenuItems:[
+                  { name:"How Turbo Works?", href:"/how-it-works" },
+                  { name:"Trust & Safety", href:"/trust" },
+                  { name:"Rent A Car", href:"/rent-car" },
+                  { name:"Become a Host", href:"/join-us" },
+                  { name:"About Us", href:"/about" },
+                  { name:"Contact Support", href:"/contact" },
+                  { name:"Help Center", href:"/help" },
+                  { name:"FAQs", href:"/faqs" }
+              ]
+          }
+          ]
+  };
   let headerSearchbox = '';
   // if(includesSearchbox){
   //   headerSearchbox = <Searchbox />
@@ -28,7 +72,7 @@ const Navbar = ({isLoggedIn,hasCar, includesSearchbox}) => {
           </button>
           <a className="navbar-brand" href="index.html"><img src={companyLogo} alt="" /></a>
         </div>
-          <div className="all-menu-items-container">
+          <div className={classes.AllMenuItemsContainer}>
         <div className={classes.SearchboxContainer}>
           <div className={classes.SearchboxInput}>
               <input type="text" className="rq-form-element pickup-location" placeholder="Pickup Location" />
@@ -126,32 +170,29 @@ const Navbar = ({isLoggedIn,hasCar, includesSearchbox}) => {
             )}
             {isLoggedIn &&
                   <li>
-                    <a href="list-car.php">List A Car</a>
+                    <a href="/list-car">List A Car</a>
                   </li>
-                }
+            }
             {isLoggedIn &&
-                  <li className="dropdown">
-                    <a href="how-turbo-works.php" className="dropdown-toggle" data-toggle="dropdown" role="button"
-                                                                                                   aria-haspopup="true" aria-expanded="false">Learn More <span className="ion-chevron-down"></span></a>
-                    <ul className="dropdown-menu">
-                      <li><a href="how-turbo-works.php">How does Turbo work?</a></li>
-                        <li><a href="rent-a-car.php">Rent Car</a></li>
-                          <li><a href="make-money.php">Rent Out Car</a></li>
-                    </ul>
-                  </li>
-                }
-                {isLoggedIn &&
-                  <li className="dropdown">
-                    <a href="./my-profile.php" className="dropdown-toggle" data-toggle="dropdown" role="button"
-                                                                                       aria-haspopup="true" aria-expanded="false">My Profile<span className="ion-chevron-down"></span></a>
-                    <ul className="dropdown-menu">
-                      <li><a href="./my-profile.php">Profile</a></li>
-                      {hasCar && <li><a href="./my-account.php">Listed Car</a></li> }
-                      <li><a href="./history.php">History</a></li>
-                      <li><a id="logout" href="#">Log Out</a></li>
-                    </ul>
-                  </li>
-                }
+              <li className="dropdown">
+                <a href="/profile" className="dropdown-toggle" data-toggle="dropdown" role="button"
+                                                                                   aria-haspopup="true" aria-expanded="false">My Profile<span className="ion-chevron-down"></span></a>
+                <ul className="dropdown-menu">
+                  <li><a href="/profile">Profile</a></li>
+                  {hasCar && <li><a href="Account">Account</a></li> }
+                  <li><a href="/trips">Trips</a></li>
+                  <li><a href="/my-cars">My Cars</a></li>
+                  <li><a href="/sales">Sales</a></li>
+                  <li><a href="/payments">Payments</a></li>
+                  <li><a id="logout" href="#">Log Out</a></li>
+                </ul>
+              </li>
+            }
+            {isLoggedIn &&
+              <li>
+                  <a href="/messages">Messages</a>
+              </li>
+            }
             {!isLoggedIn &&
               <li className="login-register-link right-side-link"><a href="registration.html">
                 <i className="icon_lock-open_alt"></i>Login</a>

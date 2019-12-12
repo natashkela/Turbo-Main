@@ -12237,9 +12237,10 @@ to {
     line-height: 14px;
     border-right: 1px solid #fff;
 }
-}.navbar .navbar-nav li.login-register-link {
-    margin-left: 180px;
 }
+/*.navbar .navbar-nav li.login-register-link {*/
+/*    margin-left: 180px;*/
+/*}*/
 @media (max-width:1200px) {
     .navbar .navbar-nav li.login-register-link {
     margin-left: 100px;

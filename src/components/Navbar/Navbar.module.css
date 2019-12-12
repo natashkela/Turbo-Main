@@ -34,9 +34,13 @@
     .SearchboxInput{
         width:100%!important;
         margin-left:0;
+        padding-left:0px;
     }
     .SearchboxContainer{
         float:none;
         display:block;
+    }
+    .AllMenuItemsContainer{
+        margin-left:-10px;
     }
 }
