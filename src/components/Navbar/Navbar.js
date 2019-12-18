@@ -176,7 +176,7 @@ const Navbar = ({isLoggedIn,hasCar, includesSearchbox}) => {
             {isLoggedIn &&
               <li className="dropdown">
                 <a href="/profile" className="dropdown-toggle" data-toggle="dropdown" role="button"
-                                                                                   aria-haspopup="true" aria-expanded="false">My Profile<span className="ion-chevron-down"></span></a>
+                                                                                   aria-haspopup="true" aria-expanded="false"><img className={classes.ProfileAvatar} src={require("../../assets/img/users/avatar.jpg")} alt="" /> Profile<span className="ion-chevron-down"></span></a>
                 <ul className="dropdown-menu">
                   <li><a href="/profile">Profile</a></li>
                   {hasCar && <li><a href="Account">Account</a></li> }

@@ -29,6 +29,13 @@
      color: #999999;
  }
 
+.ProfileAvatar{
+    height:30px;
+    width:30px;
+    margin-top:-8px;
+    border-radius:50%;
+}
+
 @media (max-width:768px) {
     .SearchboxInput input,
     .SearchboxInput{
